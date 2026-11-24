@@ -24,7 +24,7 @@ CREATE TABLE bills (
     phone         VARCHAR(15),
     payment_mode  ENUM('Cash', 'UPI', 'Card') NOT NULL,
     bill_date     DATETIME      DEFAULT CURRENT_TIMESTAMP,
-    total_amount  DECIMAL(10,2) DEFAULT 0
+    total_amount  DECIMAL(12,2) DEFAULT 0
 );
 
 -- Detail table: one row per product on a bill (filled by the web page)
